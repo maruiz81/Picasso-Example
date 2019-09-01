@@ -1,3 +1,3 @@
-# Koin-Example
+# Picasso Example
 
-An example of Dependency Injection with Koin
+Example of Image loading with Picasso to measure the performance
