@@ -1,4 +1,4 @@
-package com.maruiz.koinexample.presentation.extensions
+package com.maruiz.picassoexample.presentation.extensions
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable

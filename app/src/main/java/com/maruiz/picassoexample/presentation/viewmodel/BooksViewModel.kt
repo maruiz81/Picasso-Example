@@ -1,11 +1,11 @@
-package com.maruiz.koinexample.presentation.viewmodel
+package com.maruiz.picassoexample.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import arrow.core.None
-import com.maruiz.koinexample.data.model.BookModel
-import com.maruiz.koinexample.domain.usecase.GetBooks
-import com.maruiz.koinexample.presentation.presentationmodel.BookPresentationModel
+import com.maruiz.picassoexample.data.model.BookModel
+import com.maruiz.picassoexample.domain.usecase.GetBooks
+import com.maruiz.picassoexample.presentation.presentationmodel.BookPresentationModel
 
 class BooksViewModel(private val getBooks: GetBooks) : BaseViewModel() {
     private val books = MutableLiveData<List<BookPresentationModel>>()

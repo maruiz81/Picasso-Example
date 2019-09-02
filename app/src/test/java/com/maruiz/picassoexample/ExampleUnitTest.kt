@@ -1,4 +1,4 @@
-package com.maruiz.koinexample
+package com.maruiz.picassoexample
 
 import org.junit.Test
 

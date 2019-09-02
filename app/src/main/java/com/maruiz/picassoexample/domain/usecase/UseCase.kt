@@ -1,7 +1,7 @@
-package com.maruiz.koinexample.domain.usecase
+package com.maruiz.picassoexample.domain.usecase
 
 import arrow.core.Either
-import com.maruiz.koinexample.data.error.Failure
+import com.maruiz.picassoexample.data.error.Failure
 import kotlinx.coroutines.*
 
 abstract class UseCase<out Type, in Params> where Type : Any {

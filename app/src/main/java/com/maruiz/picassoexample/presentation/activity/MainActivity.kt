@@ -1,13 +1,13 @@
-package com.maruiz.koinexample.presentation.activity
+package com.maruiz.picassoexample.presentation.activity
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
-import com.maruiz.koinexample.R
-import com.maruiz.koinexample.presentation.adapter.BooksAdapter
-import com.maruiz.koinexample.presentation.viewmodel.BooksViewModel
+import com.maruiz.picassoexample.R
+import com.maruiz.picassoexample.presentation.adapter.BooksAdapter
+import com.maruiz.picassoexample.presentation.viewmodel.BooksViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 

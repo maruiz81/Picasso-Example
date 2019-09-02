@@ -1,11 +1,10 @@
-package com.maruiz.koinexample.data.extensions
+package com.maruiz.picassoexample.data.extensions
 
-import android.util.Log
 import arrow.core.Either
 import arrow.core.Left
 import arrow.core.Right
 import arrow.core.Try
-import com.maruiz.koinexample.data.error.Failure
+import com.maruiz.picassoexample.data.error.Failure
 import retrofit2.Call
 
 fun <T> Call<T>.makeRequest(): Either<Failure, T?> =

@@ -1,9 +1,9 @@
-package com.maruiz.koinexample.presentation.di
+package com.maruiz.picassoexample.presentation.di
 
-import com.maruiz.koinexample.data.api.BookApi
-import com.maruiz.koinexample.domain.usecase.GetBooks
-import com.maruiz.koinexample.presentation.adapter.BooksAdapter
-import com.maruiz.koinexample.presentation.viewmodel.BooksViewModel
+import com.maruiz.picassoexample.data.api.BookApi
+import com.maruiz.picassoexample.domain.usecase.GetBooks
+import com.maruiz.picassoexample.presentation.adapter.BooksAdapter
+import com.maruiz.picassoexample.presentation.viewmodel.BooksViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit

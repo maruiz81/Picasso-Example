@@ -1,6 +1,6 @@
-package com.maruiz.koinexample.data.api
+package com.maruiz.picassoexample.data.api
 
-import com.maruiz.koinexample.data.model.BookModel
+import com.maruiz.picassoexample.data.model.BookModel
 import retrofit2.Call
 import retrofit2.http.GET
 

@@ -1,3 +1,3 @@
-package com.maruiz.koinexample.presentation.presentationmodel
+package com.maruiz.picassoexample.presentation.presentationmodel
 
 class BookPresentationModel(val image: String = "")

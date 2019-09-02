@@ -1,4 +1,4 @@
-package com.maruiz.koinexample
+package com.maruiz.picassoexample
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

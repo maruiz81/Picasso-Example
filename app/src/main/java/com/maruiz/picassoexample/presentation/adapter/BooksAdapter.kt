@@ -1,12 +1,12 @@
-package com.maruiz.koinexample.presentation.adapter
+package com.maruiz.picassoexample.presentation.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.maruiz.koinexample.R
-import com.maruiz.koinexample.presentation.extensions.inflate
-import com.maruiz.koinexample.presentation.extensions.loadImage
-import com.maruiz.koinexample.presentation.presentationmodel.BookPresentationModel
+import com.maruiz.picassoexample.R
+import com.maruiz.picassoexample.presentation.extensions.inflate
+import com.maruiz.picassoexample.presentation.extensions.loadImage
+import com.maruiz.picassoexample.presentation.presentationmodel.BookPresentationModel
 import kotlinx.android.synthetic.main.row_book.view.*
 import kotlin.properties.Delegates
 import kotlin.time.ExperimentalTime

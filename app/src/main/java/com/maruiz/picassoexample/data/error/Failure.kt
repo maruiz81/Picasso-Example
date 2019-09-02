@@ -1,4 +1,4 @@
-package com.maruiz.koinexample.data.error
+package com.maruiz.picassoexample.data.error
 
 sealed class Failure {
     object ServerError : Failure()

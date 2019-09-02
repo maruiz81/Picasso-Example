@@ -1,7 +1,7 @@
-package com.maruiz.koinexample.presentation.application
+package com.maruiz.picassoexample.presentation.application
 
 import android.app.Application
-import com.maruiz.koinexample.presentation.di.appModule
+import com.maruiz.picassoexample.presentation.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

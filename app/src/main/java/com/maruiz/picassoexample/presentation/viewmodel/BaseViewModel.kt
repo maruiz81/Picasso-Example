@@ -1,9 +1,9 @@
-package com.maruiz.koinexample.presentation.viewmodel
+package com.maruiz.picassoexample.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.maruiz.koinexample.data.error.Failure
+import com.maruiz.picassoexample.data.error.Failure
 
 abstract class BaseViewModel : ViewModel() {
 
