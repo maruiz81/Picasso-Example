@@ -9,11 +9,16 @@ import com.maruiz.koinexample.presentation.extensions.loadImage
 import com.maruiz.koinexample.presentation.presentationmodel.BookPresentationModel
 import kotlinx.android.synthetic.main.row_book.view.*
 import kotlin.properties.Delegates
+import kotlin.time.ExperimentalTime
+import kotlin.time.MonoClock
 
 class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
     var renderables: List<BookPresentationModel> by Delegates.observable(emptyList()) { _, _, _ ->
         notifyDataSetChanged()
     }
+
+    @UseExperimental(ExperimentalTime::class)
+    private val totalMark by lazy { MonoClock.markNow() }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
         ViewHolder(parent.inflate(R.layout.row_book))
@@ -24,9 +29,9 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
         holder.bind(renderables[position])
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(model: BookPresentationModel) {
-            itemView.image.loadImage(model.image)
+            itemView.image.loadImage(model.image, totalMark)
         }
     }
 }

@@ -15,7 +15,7 @@ class BooksViewModel(private val getBooks: GetBooks) : BaseViewModel() {
     fun getBooks() = getBooks(None) { it.fold(::handleFailure, ::handleSuccess) }
 
     private fun handleSuccess(books: List<BookModel>) {
-        this.books.value = books.map { BookPresentationModel(it.title, it.author, it.shortSynopsis, it.synopsis, it.image) }
+        this.books.value = books.map { BookPresentationModel(it.image) }
     }
 
     override fun cancelRequest() {
