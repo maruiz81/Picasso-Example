@@ -10,17 +10,17 @@ import android.widget.ImageView
 import androidx.annotation.LayoutRes
 import com.squareup.picasso.Picasso
 import com.squareup.picasso.Target
-import kotlin.time.ClockMark
+import kotlin.time.TimeMark
 import kotlin.time.ExperimentalTime
-import kotlin.time.MonoClock
+import kotlin.time.TimeSource.Monotonic
 
 fun ViewGroup.inflate(@LayoutRes layoutRes: Int): View =
     LayoutInflater.from(context).inflate(layoutRes, this, false)
 
-@UseExperimental(ExperimentalTime::class)
-fun ImageView.loadImage(url: String, totalMark: ClockMark) {
+@OptIn(ExperimentalTime::class)
+fun ImageView.loadImage(url: String, totalMark: TimeMark) {
     val tag = "ImageLoading"
-    val mark = MonoClock.markNow()
+    val mark = Monotonic.markNow()
     Picasso.get()
         .load(url)
         .into(object : Target {

@@ -10,15 +10,15 @@ import com.maruiz.picassoexample.presentation.presentationmodel.BookPresentation
 import kotlinx.android.synthetic.main.row_book.view.*
 import kotlin.properties.Delegates
 import kotlin.time.ExperimentalTime
-import kotlin.time.MonoClock
+import kotlin.time.TimeSource
 
 class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
     var renderables: List<BookPresentationModel> by Delegates.observable(emptyList()) { _, _, _ ->
         notifyDataSetChanged()
     }
 
-    @UseExperimental(ExperimentalTime::class)
-    private val totalMark by lazy { MonoClock.markNow() }
+    @OptIn(ExperimentalTime::class)
+    private val totalMark by lazy { TimeSource.Monotonic.markNow() }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
         ViewHolder(parent.inflate(R.layout.row_book))
